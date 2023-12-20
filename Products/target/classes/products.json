@@ -1,0 +1,26 @@
+[
+  {
+    "id": "P001",
+    "color": "Red",
+    "description": "Product 1 - Red",
+    "price": 19.99
+  },
+  {
+    "id": "P002",
+    "color": "Blue",
+    "description": "Product 2 - Blue",
+    "price": 29.99
+  },
+  {
+    "id": "P003",
+    "color": "Green",
+    "description": "Product 3 - Green",
+    "price": 14.99
+  },
+  {
+    "id": "P004",
+    "color": "Yellow",
+    "description": "Product 4 - Yellow",
+    "price": 24.99
+  }
+]

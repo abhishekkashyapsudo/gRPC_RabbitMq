@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package com.nagp.products.proto;
+
+message Product {
+    string id = 1;
+    string color = 2;
+    string description = 3;
+    float price = 4;
+}
+
+message PlaceOrderRequest {
+   int32 quantity = 1;
+   Product product = 2;
+}
+
+message UpdateOrderRequest {
+   string updaterId = 1;
+   int32 quantity = 2;
+   Product products = 3;
+}
+
+message OrderResponse {
+    string message = 1;
+}
+
+
+service OrderService {
+    rpc placeOrder(PlaceOrderRequest) returns (OrderResponse);
+    rpc updateOrder(UpdateOrderRequest) returns (OrderResponse);
+}
+
